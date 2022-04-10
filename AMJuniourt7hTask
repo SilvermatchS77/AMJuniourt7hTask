@@ -5,18 +5,15 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Сколько золота в кошельке??");
-
         string goldString = Console.ReadLine();
         int gold = Convert.ToInt32(goldString);
 
         Console.WriteLine("Сколько кристаллов хочешь купить?? 1 кристалл == 5 золота.");
         string crystalsString = Console.ReadLine();
         int crystals = Convert.ToInt32(crystalsString);
+
         int crystalPrice = 5;
-
-        crystals = gold / crystalPrice;
-        gold = gold % crystalPrice;
-
+        gold = gold - crystals * crystalPrice;
         Console.WriteLine("Осталось золота - {0}, приобретено кристаллов {1}", gold, crystals);
     }
 }
