@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Сколько золота в кошельке??");
+
+        string goldString = Console.ReadLine();
+        int gold = Convert.ToInt32(goldString);
+
+        Console.WriteLine("Сколько кристаллов хочешь купить??");
+        string crystalsString = Console.ReadLine();
+        int crystal = Convert.ToInt32(crystalsString);
+        int crystalPrice = 5;
+
+        int goldResult = gold % crystalPrice;
+        int crystalResult = gold / crystalPrice;
+
+        Console.WriteLine("Осталось золота - {0}, приобретено кристаллов {1}", goldResult, crystalResult);
+    }
+}
