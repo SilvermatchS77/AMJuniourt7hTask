@@ -9,7 +9,7 @@ class Program
         string goldString = Console.ReadLine();
         int gold = Convert.ToInt32(goldString);
 
-        Console.WriteLine("Сколько кристаллов хочешь купить??");
+        Console.WriteLine("Сколько кристаллов хочешь купить?? 1 кристалл == 5 золота.");
         string crystalsString = Console.ReadLine();
         int crystal = Convert.ToInt32(crystalsString);
         int crystalPrice = 5;
